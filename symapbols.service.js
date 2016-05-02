@@ -37,8 +37,12 @@
 
     // }
 
-    function get(i) {
-      return symbols[i];
+    function svgElement(i) {
+      var data = symbols[i], svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      for (var i = data.length - 1; i >= 0; i--) {
+        data[i]
+      }
+      return svg;
     }
   }
 })();
